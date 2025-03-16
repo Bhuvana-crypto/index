@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diversity & Inclusion Commitment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin-top: 20px;
+        }
+        input[type="checkbox"] {
+            transform: scale(1.2);
+            margin-right: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        button:hover:enabled {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Diversity & Inclusion Commitment</h2>
+        <p>As we conclude this course, we trust that you now understand the importance of diversity, inclusivity, and safety at Compass.</p>
+        <p>We ask you to commit to these values in your daily interactions, decisions, and actions. By doing so, you contribute not only to your personal growth but also to the collective success and integrity of the organization.</p>
+        <p>Let’s continue building a workplace where everyone can feel proud to belong!</p>
+
+        <!-- Checkbox Activity -->
+        <label>
+            <input type="checkbox" id="commitCheckbox"> I commit to fostering a diverse and inclusive environment.
+        </label>
+
+        <!-- Button (Disabled by Default) -->
+        <button id="commitButton" disabled onclick="window.location.href='https://www.articulate.com/lp/storyline-version-articulate-360/'">
+            I Commit
+        </button>
+    </div>
+
+    <script>
+        // Enable button only when checkbox is checked
+        document.getElementById('commitCheckbox').addEventListener('change', function() {
+            document.getElementById('commitButton').disabled = !this.checked;
+        });
+    </script>
+
+</body>
+</html>
